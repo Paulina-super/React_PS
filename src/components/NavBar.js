@@ -2,7 +2,7 @@ import { render } from '@testing-library/react';
 import React from 'react';
 import ".styles.css";
 
-class NavBar extends from React.Component{
+class NavBar extends React.Component {
     render(){
         return(
             <div>
