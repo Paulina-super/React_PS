@@ -5,6 +5,10 @@ import "./NavBar.css"
 class NavBar extends React.Component {
  state={clicked: false}
 
+ handleClick=()=>{
+     this.setState({ clicked: !this.state.clecked })
+ }
+
     render(){
         return(
             <nav className="NavbarItems">
@@ -14,7 +18,7 @@ class NavBar extends React.Component {
                     <i className={this.state.clicked ? 'fas fa-times': 'fas fa-bars'}></i>
                     
                 </div>
-                <ul>
+                <ul classsName={this.state.clicked ?'nav-menu active':'nav-menu'}>
                     {MenuItems.map((item, index) => {
                         return(
                             <li key={index}>

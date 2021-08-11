@@ -4,13 +4,28 @@
     display:flex;
     justify-content: center;
     align-items:center;
-    
     font-size: 1.2rem;
 }
 
+.navbar-logo{
+    color:black;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+}
 
 .fas fa-cat{
     margin-left:0.5rem;
     font-size:2rem;
+}
+
+.nav-menu{
+    display:grid;
+    grid-template-columns: repeat(5,auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content:end ;
 }
 
