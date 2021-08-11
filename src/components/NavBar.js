@@ -3,11 +3,15 @@ import { MenuItems } from "./MenuItems"
 import "./NavBar.css"
 
 class NavBar extends React.Component {
+ state={clicked: false}
+
     render(){
         return(
             <nav className="NavbarItems">
-                <h1 className="navbar-logo">Samuel<i className="Cat"></i></h1>
-                <div className="menu-icon">
+                <h1 className="navbar-logo">Samuel<i className="fas fa-cat"></i></h1>
+                
+                <div className="menu-icon" onClick={this.handleClick}>
+                    <i className={this.state.clicked ? 'fas fa-times': 'fas fa-bars'}></i>
                     
                 </div>
                 <ul>
