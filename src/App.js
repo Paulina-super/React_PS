@@ -2,12 +2,14 @@ import React from 'react';
 import logo from './logo.svg';
 import NavBar from './components/NavBar';
 import './App.css';
+import CartWidget from './components/CartWidget/CartWidget';
 
 
 function App() {
   return (
     <div className="App">
       <NavBar />
+      <CartWidget />
       <header className="App-header">
        <img src={logo} className="App-logo" alt="logo" />
         <p>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { MenuItems } from "./MenuItems"
 import "./NavBar.css"
+import "./CartWidget/CartWidget"
 
 class NavBar extends React.Component {
  state={clicked: false}
